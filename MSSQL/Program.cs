@@ -14,7 +14,7 @@ namespace MSSQL
 				String result = "";
 				while (reader.Read() == true)
 				{
-					result += reader[0] + "\n";
+					result += reader[0];
 				}
 				reader.Close();
 				return result;
